@@ -1,0 +1,21 @@
+{
+  "name": "Youtube Destroyer",
+  "description": "Restrict youtube",
+  "version": "1.0",
+  "permissions": [
+    "tabs"
+  ],
+  "background": {
+    "scripts": ["destroyer.js"],
+    "persistent": false
+  },
+  "browser_action": {
+    "default_title": "Restrict youtube pages"
+  },
+  "manifest_version": 1,
+  "icons": {
+    "16": "icon_16.png",
+    "48": "icon_48.png",
+    "128": "icon_128.png"
+  }
+}
