@@ -1,16 +1,24 @@
 {
   "name": "Youtube Destroyer",
-  "description": "Restrict youtube pages",
+  "description": "Limit the number of viewing youtube videos",
   "version": "1.0",
   "permissions": [
+    "storage",
     "tabs"
   ],
   "background": {
     "scripts": ["destroyer.js"],
     "persistent": false
   },
+  "content_scripts": [
+    {
+      "js": ["jquery.min.js"],
+      "matches": ["http://*/*", "https://*/*"]
+    }
+  ],
   "browser_action": {
-    "default_title": "Restrict youtube pages"
+    "default_icon": "icon_16.png",
+    "default_popup": "popup.html"
   },
   "manifest_version": 2,
   "icons": {
